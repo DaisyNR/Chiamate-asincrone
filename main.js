@@ -36,7 +36,6 @@ avvioBtn.addEventListener('click', ()=>{
 pausaBtn.addEventListener('click', ()=>{
     clearInterval(interval)
     pausedCountdown = counter
-    // qui vorrei che torni: counter = inputCountdown.value così che dopo il reset parta dal nuovo valore immesso e non continui col countdown precedente. 
 })
 
 resetBtn.addEventListener('click', ()=>{
@@ -44,4 +43,5 @@ resetBtn.addEventListener('click', ()=>{
     counter.value = '' 
     countdown.innerHTML = ''
     counter = 0
+    pausedCountdown = 0
 })
